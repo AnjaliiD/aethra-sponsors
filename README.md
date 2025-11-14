@@ -18,7 +18,7 @@ Official sponsorship page for Aethra Global Hackathon 2025, a 6-week online hack
 
 ## View the Prospectus
 
-🔗 **[View Sponsorship Page](https://[your-username].github.io/aethra-sponsors/)**
+🔗 **[View Sponsorship Page](https://AnjaliiD.github.io/aethra-sponsors/)**
 
 ## Contact
 

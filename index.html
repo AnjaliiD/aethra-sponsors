@@ -630,7 +630,7 @@
             .timeline::before {
                 left: 30px;
             }
-
+        
             .timeline-item,
             .timeline-item:nth-child(odd),
             .timeline-item:nth-child(even) {
@@ -638,61 +638,143 @@
                 margin-left: 60px;
                 text-align: left;
             }
-
+        
             .timeline-item:nth-child(odd) .timeline-dot,
             .timeline-item:nth-child(even) .timeline-dot {
                 left: -50px;
             }
-
+        
             .about-grid {
                 grid-template-columns: 1fr;
+                gap: 30px;
             }
-
+        
             .why-sponsor-grid {
                 grid-template-columns: 1fr;
             }
-
+        
             .tier-features {
                 grid-template-columns: 1fr;
             }
+        
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .visibility-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            .prize-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-
-        .past-event-banner {
-            background: #1a1a1a;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .past-event-banner a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 40px;
-            background: rgba(255,255,255,0.15);
-            border-radius: 30px;
-            border: 2px solid rgba(255,255,255,0.3);
-            transition: all 0.3s ease;
-        }
-
-        .past-event-banner a:hover {
-            background: rgba(255,255,255,0.25);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
+        
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero .tagline { font-size: 1.5rem; }
-            .section-title { font-size: 2rem; }
-            section { padding: 50px 0; }
-            .container { padding: 0 20px; }
-            .tier-header { flex-direction: column; gap: 20px; align-items: flex-start; }
-            .past-event-banner a { font-size: 1.1rem; padding: 12px 30px; }
+            .hero h1 { 
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+            .hero .tagline { 
+                font-size: 1.3rem; 
+            }
+            .section-title { 
+                font-size: 2rem; 
+            }
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            section { 
+                padding: 50px 0; 
+            }
+            .container { 
+                padding: 0 20px; 
+            }
+            .tier-header { 
+                flex-direction: column; 
+                gap: 20px; 
+                align-items: flex-start; 
+            }
+            .past-event-banner a { 
+                font-size: 1.1rem; 
+                padding: 12px 30px; 
+            }
+            .logo-main {
+                width: 100px;
+                height: 100px;
+            }
+            .event-badges {
+                gap: 15px;
+            }
+            .event-badge {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+            .hero-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .tier-card {
+                padding: 30px 20px;
+            }
+            .tier-name {
+                font-size: 1.8rem;
+            }
+            .tier-price {
+                font-size: 1.6rem;
+            }
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            .cta-section p {
+                font-size: 1.1rem;
+            }
+            .contact-box {
+                padding: 30px 20px;
+            }
+            .prize-needs {
+                padding: 40px 20px;
+            }
+            .about-box {
+                padding: 30px 20px;
+            }
+            .event-image-container {
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 { 
+                font-size: 2rem;
+            }
+            .hero .tagline { 
+                font-size: 1.1rem; 
+            }
+            .prospectus-label {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            .section-title { 
+                font-size: 1.7rem; 
+            }
+            .visibility-grid {
+                grid-template-columns: 1fr;
+            }
+            .prize-grid {
+                grid-template-columns: 1fr;
+            }
+            .past-event-banner {
+                padding: 30px 20px;
+            }
+            .past-event-banner a {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            .tier-badge {
+                font-size: 0.75rem;
+                padding: 6px 15px;
+                right: 20px;
+            }
         }
     </style>
 </head>
@@ -1235,4 +1317,5 @@
     </script>
 </body>
 </html>
+
 

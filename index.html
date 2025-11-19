@@ -625,6 +625,34 @@
             opacity: 1;
             transform: translateY(-3px);
         }
+
+        .past-event-banner {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .past-event-banner a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .past-event-banner a:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
         
         @media (max-width: 968px) {
             .timeline::before {
@@ -1317,5 +1345,6 @@
     </script>
 </body>
 </html>
+
 
 
